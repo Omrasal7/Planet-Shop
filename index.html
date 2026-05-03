@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,3 +122,169 @@
   <script src="app.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planet Shop</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:ital,wght@0,800;0,900;1,700;1,800;1,900&family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#2c2c2c;
+}
+
+
+header{
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 100px;
+    border-bottom:1px solid #111;
+}
+
+.logo{
+    border:2px solid white;
+    padding:10px 15px;
+    font-weight:700;
+}
+
+ul{
+    display:flex;
+    list-style:none;
+    gap:15px;
+}
+
+ul li a{
+    text-decoration:none;
+    border:2px solid white;
+    padding:5px 18px;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+ul li a:hover{
+    background:white;
+    color:black;
+}
+
+.signup{
+    background:white;
+    color:black;
+}
+
+
+main{
+    height:calc(100vh - 70px);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 120px;
+}
+
+
+.contentleft h2{
+    font-size:60px;
+    letter-spacing:5px;
+}
+
+
+.contentmid{
+    max-width:600px;
+}
+
+.contentmid p{
+    line-height:32px;
+    opacity:0.8;
+    margin:30px 0;
+}
+
+.btn{
+    padding:15px 40px;
+    background:white;
+    color:black;
+    border:none;
+    border-radius:30px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:black;
+    color:white;
+    box-shadow:0 0 15px white;
+}
+
+
+.contentright{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.merc{
+    width:380px;
+    animation:float 4s ease-in-out infinite;
+}
+
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-20px);}
+    100%{transform:translateY(0);}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">LOGO</div>
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">OFFERS</a></li>
+            <li><a href="#">BUY NOW</a></li>
+            <li><a href="#">SELL NOW</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#" class="signup">SIGN UP</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="contentleft">
+        <h2>MERCURY</h2>
+    </div>
+
+    <div class="contentmid">
+        <p>
+            Mercury is the smallest planet in our solar system, closest to the Sun,
+            and the fastest, completing an orbit in just 88 Earth days. It has a
+            heavily cratered surface similar to our Moon and extreme temperature
+            swings from scorching heat to freezing cold.
+        </p>
+        <button class="btn">BUY NOW</button>
+    </div>
+
+    <div class="contentright">
+        <img src="mercury.png" class="merc">
+    </div>
+</main>
+
+</body>
+</html>
+>>>>>>> 8a495afd8fd6738b1804d2464ef5923b6f6d0fea
