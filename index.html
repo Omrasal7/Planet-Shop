@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet Shop | Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">PS</span>
+        <span>
+          <strong>PLANET SHOP</strong>
+          <small>Cosmic commerce for curious collectors</small>
+        </span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <a class="nav-pill" href="catalog.html">Browse Worlds</a>
+        <a class="cart-link" href="cart.html">Cart <span id="navCartCount">0</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-grid">
+        <div class="glass-card hero-card tilt-card">
+          <span class="eyebrow">Interplanetary luxury marketplace</span>
+          <h1>Shop planets like premium products, not flat placeholders.</h1>
+          <p>
+            Planet Shop is now a multi-page e-commerce concept with a home page, a real catalog, product detail pages, and a dedicated cart flow. Browse iconic worlds, compare their personalities, and build a playful cosmic collection.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="catalog.html">Start Shopping</a>
+            <a class="secondary-btn" href="product.html?id=saturn">See Featured Planet</a>
+          </div>
+          <div class="stats-row">
+            <div class="stat-box">
+              <strong>8</strong>
+              <span>planet listings</span>
+            </div>
+            <div class="stat-box">
+              <strong>4</strong>
+              <span>world collections</span>
+            </div>
+            <div class="stat-box">
+              <strong>1</strong>
+              <span>shared cart system</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="glass-card feature-card tilt-card">
+          <span class="eyebrow">Featured this week</span>
+          <h2>Saturn Signature Orbit</h2>
+          <p>
+            The ringed icon of the collection, built for shoppers who want elegance, spectacle, and the strongest shelf presence in the whole solar lineup.
+          </p>
+          <div class="feature-image-wrap">
+            <img src="saturn.jpg" alt="Saturn illustration">
+          </div>
+          <a class="primary-btn full-width" href="product.html?id=saturn">View Saturn</a>
+        </aside>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <span class="eyebrow">Why this feels bigger</span>
+          <h2>A fuller storefront experience</h2>
+          <p>Instead of one scrolling concept page, the project now follows a clearer shopping journey with separate pages and reusable UI.</p>
+        </div>
+
+        <div class="info-grid">
+          <article class="glass-card info-card tilt-card">
+            <h3>Catalog browsing</h3>
+            <p>Explore multiple planet listings with filters, search, and richer visual cards.</p>
+          </article>
+          <article class="glass-card info-card tilt-card">
+            <h3>Product detail pages</h3>
+            <p>Each selected world gets its own dedicated detail view with deeper storytelling and specs.</p>
+          </article>
+          <article class="glass-card info-card tilt-card">
+            <h3>Persistent cart</h3>
+            <p>The cart is shared across pages with local storage, so it behaves more like a real store.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <span class="eyebrow">Quick links</span>
+          <h2>Jump into the storefront</h2>
+        </div>
+
+        <div class="quick-links">
+          <a class="glass-card quick-card tilt-card" href="catalog.html?filter=rocky">
+            <h3>Rocky Worlds</h3>
+            <p>Mercury, Venus, Mars, and bold explorer picks.</p>
+          </a>
+          <a class="glass-card quick-card tilt-card" href="catalog.html?filter=gas%20giant">
+            <h3>Gas Giants</h3>
+            <p>Large-scale luxury planets with spectacle-first energy.</p>
+          </a>
+          <a class="glass-card quick-card tilt-card" href="catalog.html?filter=ice%20giant">
+            <h3>Ice Giants</h3>
+            <p>Cooler, rarer, and more design-forward cosmic products.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

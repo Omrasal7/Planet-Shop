@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet Shop | Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="cart">
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">PS</span>
+        <span>
+          <strong>PLANET SHOP</strong>
+          <small>Cosmic commerce for curious collectors</small>
+        </span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="cart.html" class="active">Cart</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <a class="nav-pill" href="catalog.html">Continue Shopping</a>
+        <a class="cart-link" href="cart.html">Cart <span id="navCartCount">0</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="cart-layout">
+        <div class="glass-card cart-main">
+          <div class="section-heading inline-head">
+            <div>
+              <span class="eyebrow">Your Order</span>
+              <h1 class="page-title">Cart</h1>
+            </div>
+            <button class="ghost-btn" id="clearCartBtn">Clear Cart</button>
+          </div>
+
+          <div class="cart-list-page" id="cartPageList"></div>
+        </div>
+
+        <aside class="glass-card cart-summary-panel tilt-card">
+          <span class="eyebrow">Checkout</span>
+          <h2>Order Summary</h2>
+          <div class="summary-stack">
+            <div class="summary-line"><span>Subtotal</span><strong id="cartSubtotal">$0.0B</strong></div>
+            <div class="summary-line"><span>Orbital insurance</span><strong id="cartInsurance">$0.0B</strong></div>
+            <div class="summary-line total"><span>Total</span><strong id="cartTotal">$0.0B</strong></div>
+          </div>
+          <button class="primary-btn full-width" id="checkoutBtn">Checkout</button>
+          <p class="muted-copy">This is a fictional checkout flow for a concept e-commerce project.</p>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
