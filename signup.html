@@ -7,7 +7,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>Planet Shop | Sign Up</title>
-<link rel="stylesheet" href="styles.css?v=20260515">
+<link rel="stylesheet" href="styles.css?v=20260515-auth2">
 <style>
     .form-group {
         margin-bottom: 20px;
@@ -43,17 +43,22 @@
             <li><a href="index.html#offers">OFFERS</a></li>
             <li><a href="index.html#about">ABOUT US</a></li>
             <li><a href="cart.html" id="cart-nav-link">CART (<span id="cart-count">0</span>)</a></li>
-            <li><a href="signup.html" class="signup active">SIGN UP</a></li>
+            <li><a href="signup.html" class="signup active auth-trigger">SIGN UP</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
     <h1 class="page-title" style="text-align:center;">JOIN THE GALAXY</h1>
-    <p class="page-desc" style="text-align:center;">Create an account to start claiming planets.</p>
+    <p class="page-desc auth-page-desc" style="text-align:center;">Create an account or log in to manage your cosmic collection.</p>
 
     <div class="signup-container">
-        <form>
+        <div class="auth-toggle" role="tablist" aria-label="Authentication mode">
+            <button type="button" class="auth-tab active" data-auth-mode="signup">Sign Up</button>
+            <button type="button" class="auth-tab" data-auth-mode="login">Log In</button>
+        </div>
+
+        <form id="auth-form" data-mode="signup">
             <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" placeholder="Enter your name" required>
@@ -66,8 +71,9 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" placeholder="Create a password" required>
             </div>
-            <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">SIGN UP NOW</button>
+            <button type="submit" class="btn" id="auth-submit-btn" style="width: 100%; margin-top: 10px;">SIGN UP NOW</button>
         </form>
+        <div class="auth-status" id="auth-status" aria-live="polite"></div>
         <p style="text-align:center; margin-top: 20px; font-size: 14px; opacity: 0.7;">Want to keep browsing first? <a href="catalog.html" style="text-decoration:underline;">Visit the catalog</a></p>
     </div>
 </main>
@@ -76,6 +82,6 @@
     <p>&copy; 2026 Planet Shop.</p>
 </footer>
 
-<script src="app.js?v=20260515"></script>
+<script src="app.js?v=20260515-auth2"></script>
 </body>
 </html>
