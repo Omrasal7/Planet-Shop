@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planet Shop | Catalog</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Planet Shop | Catalog</title>
+<link rel="stylesheet" href="styles.css?v=20260515">
 </head>
-<body data-page="catalog">
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">PS</span>
-        <span>
-          <strong>PLANET SHOP</strong>
-          <small>Cosmic commerce for curious collectors</small>
-        </span>
-      </a>
+<body>
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="catalog.html" class="active">Catalog</a>
-        <a href="cart.html">Cart</a>
-        <a href="about.html">About</a>
-      </nav>
+<header>
+    <a href="index.html" class="logo">PLANET SHOP</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="catalog.html" class="active">CATALOG</a></li>
+            <li><a href="index.html#offers">OFFERS</a></li>
+            <li><a href="index.html#about">ABOUT US</a></li>
+            <li><a href="cart.html" id="cart-nav-link">CART (<span id="cart-count">0</span>)</a></li>
+            <li><a href="signup.html" class="signup">SIGN UP</a></li>
+        </ul>
+    </nav>
+</header>
 
-      <div class="topbar-actions">
-        <label class="search-box">
-          <span>Search</span>
-          <input id="catalogSearch" type="text" placeholder="Search a planet or type..." />
-        </label>
-        <a class="cart-link" href="cart.html">Cart <span id="navCartCount">0</span></a>
-      </div>
-    </header>
+<main>
+    <h1 class="page-title">ALL PLANETS</h1>
+    <p class="page-desc">Browse our collection of planets. Pick your favorite and add it to your cart.</p>
 
-    <main>
-      <section class="section-block compact-top">
-        <div class="section-heading">
-          <span class="eyebrow">Catalog</span>
-          <h1 class="page-title">Browse the planet collection</h1>
-          <p>Filter by world type, search by name, and open each item on its own dedicated detail page.</p>
-        </div>
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Rocky">Rocky</button>
+        <button class="filter-btn" data-filter="Gas Giant">Gas Giant</button>
+        <button class="filter-btn" data-filter="Ice Giant">Ice Giant</button>
+    </div>
 
-        <div class="filters" id="catalogFilters">
-          <button class="filter-btn active" data-filter="all">All Worlds</button>
-          <button class="filter-btn" data-filter="rocky">Rocky</button>
-          <button class="filter-btn" data-filter="gas giant">Gas Giant</button>
-          <button class="filter-btn" data-filter="ice giant">Ice Giant</button>
-          <button class="filter-btn" data-filter="habitable fantasy">Habitable Fantasy</button>
-        </div>
+    <div class="catalog-grid" id="catalog-grid">
+        <!-- Products will be injected here by app.js -->
+    </div>
+</main>
 
-        <div class="catalog-grid" id="catalogGrid"></div>
-      </section>
-    </main>
-  </div>
+<footer>
+    <p>&copy; 2026 Planet Shop. </p>
+</footer>
 
-  <script src="app.js"></script>
+<script src="app.js?v=20260515"></script>
 </body>
 </html>
+

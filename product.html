@@ -1,65 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planet Shop | Product</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Planet Shop | Product</title>
+<link rel="stylesheet" href="styles.css?v=20260515">
 </head>
-<body data-page="product">
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">PS</span>
-        <span>
-          <strong>PLANET SHOP</strong>
-          <small>Cosmic commerce for curious collectors</small>
-        </span>
-      </a>
+<body>
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="catalog.html">Catalog</a>
-        <a href="cart.html">Cart</a>
-        <a href="about.html">About</a>
-      </nav>
+<header>
+    <a href="index.html" class="logo">PLANET SHOP</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="catalog.html">CATALOG</a></li>
+            <li><a href="index.html#offers">OFFERS</a></li>
+            <li><a href="index.html#about">ABOUT US</a></li>
+            <li><a href="cart.html" id="cart-nav-link">CART (<span id="cart-count">0</span>)</a></li>
+            <li><a href="signup.html" class="signup">SIGN UP</a></li>
+        </ul>
+    </nav>
+</header>
 
-      <div class="topbar-actions">
-        <a class="nav-pill" href="catalog.html">Back to Catalog</a>
-        <a class="cart-link" href="cart.html">Cart <span id="navCartCount">0</span></a>
-      </div>
-    </header>
+<main>
+    <div class="product-detail" id="product-detail-container">
+        <!-- Product info injected by app.js -->
+    </div>
+</main>
 
-    <main>
-      <section class="product-layout" id="productLayout">
-        <div class="glass-card product-visual tilt-card">
-          <div class="product-image-frame" id="productImageFrame"></div>
-        </div>
+<footer>
+    <p>&copy; 2026 Planet Shop. </p>
+</footer>
 
-        <div class="glass-card product-copy tilt-card">
-          <span class="eyebrow" id="productTier">Planet Product</span>
-          <h1 id="productName">Loading planet...</h1>
-          <p id="productDescription">Loading product description...</p>
-
-          <div class="meta-grid" id="productMeta"></div>
-
-          <div class="product-actions">
-            <button class="primary-btn" id="productAddBtn">Add to Cart</button>
-            <a class="secondary-btn" href="catalog.html">Keep Browsing</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-block">
-        <div class="section-heading">
-          <span class="eyebrow">More from the collection</span>
-          <h2>You may also like</h2>
-        </div>
-        <div class="catalog-grid compact-grid" id="relatedGrid"></div>
-      </section>
-    </main>
-  </div>
-
-  <script src="app.js"></script>
+<script src="app.js?v=20260515"></script>
 </body>
 </html>
+

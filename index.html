@@ -1,290 +1,126 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planet Shop | Home</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body data-page="home">
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">PS</span>
-        <span>
-          <strong>PLANET SHOP</strong>
-          <small>Cosmic commerce for curious collectors</small>
-        </span>
-      </a>
-
-      <nav class="main-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="catalog.html">Catalog</a>
-        <a href="cart.html">Cart</a>
-        <a href="about.html">About</a>
-      </nav>
-
-      <div class="topbar-actions">
-        <a class="nav-pill" href="catalog.html">Browse Worlds</a>
-        <a class="cart-link" href="cart.html">Cart <span id="navCartCount">0</span></a>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero-grid">
-        <div class="glass-card hero-card tilt-card">
-          <span class="eyebrow">Interplanetary luxury marketplace</span>
-          <h1>Shop planets like premium products, not flat placeholders.</h1>
-          <p>
-            Planet Shop is now a multi-page e-commerce concept with a home page, a real catalog, product detail pages, and a dedicated cart flow. Browse iconic worlds, compare their personalities, and build a playful cosmic collection.
-          </p>
-          <div class="hero-actions">
-            <a class="primary-btn" href="catalog.html">Start Shopping</a>
-            <a class="secondary-btn" href="product.html?id=saturn">See Featured Planet</a>
-          </div>
-          <div class="stats-row">
-            <div class="stat-box">
-              <strong>8</strong>
-              <span>planet listings</span>
-            </div>
-            <div class="stat-box">
-              <strong>4</strong>
-              <span>world collections</span>
-            </div>
-            <div class="stat-box">
-              <strong>1</strong>
-              <span>shared cart system</span>
-            </div>
-          </div>
-        </div>
-
-        <aside class="glass-card feature-card tilt-card">
-          <span class="eyebrow">Featured this week</span>
-          <h2>Saturn Signature Orbit</h2>
-          <p>
-            The ringed icon of the collection, built for shoppers who want elegance, spectacle, and the strongest shelf presence in the whole solar lineup.
-          </p>
-          <div class="feature-image-wrap">
-            <img src="saturn.jpg" alt="Saturn illustration">
-          </div>
-          <a class="primary-btn full-width" href="product.html?id=saturn">View Saturn</a>
-        </aside>
-      </section>
-
-      <section class="section-block">
-        <div class="section-heading">
-          <span class="eyebrow">Why this feels bigger</span>
-          <h2>A fuller storefront experience</h2>
-          <p>Instead of one scrolling concept page, the project now follows a clearer shopping journey with separate pages and reusable UI.</p>
-        </div>
-
-        <div class="info-grid">
-          <article class="glass-card info-card tilt-card">
-            <h3>Catalog browsing</h3>
-            <p>Explore multiple planet listings with filters, search, and richer visual cards.</p>
-          </article>
-          <article class="glass-card info-card tilt-card">
-            <h3>Product detail pages</h3>
-            <p>Each selected world gets its own dedicated detail view with deeper storytelling and specs.</p>
-          </article>
-          <article class="glass-card info-card tilt-card">
-            <h3>Persistent cart</h3>
-            <p>The cart is shared across pages with local storage, so it behaves more like a real store.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-block">
-        <div class="section-heading">
-          <span class="eyebrow">Quick links</span>
-          <h2>Jump into the storefront</h2>
-        </div>
-
-        <div class="quick-links">
-          <a class="glass-card quick-card tilt-card" href="catalog.html?filter=rocky">
-            <h3>Rocky Worlds</h3>
-            <p>Mercury, Venus, Mars, and bold explorer picks.</p>
-          </a>
-          <a class="glass-card quick-card tilt-card" href="catalog.html?filter=gas%20giant">
-            <h3>Gas Giants</h3>
-            <p>Large-scale luxury planets with spectacle-first energy.</p>
-          </a>
-          <a class="glass-card quick-card tilt-card" href="catalog.html?filter=ice%20giant">
-            <h3>Ice Giants</h3>
-            <p>Cooler, rarer, and more design-forward cosmic products.</p>
-          </a>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <script src="app.js"></script>
-</body>
-</html>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Planet Shop</title>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Montserrat:ital,wght@0,800;0,900;1,700;1,800;1,900&family=Poppins:wght@300;400;600&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    color:white;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background:#2c2c2c;
-}
-
-
-header{
-    height:70px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0 100px;
-    border-bottom:1px solid #111;
-}
-
-.logo{
-    border:2px solid white;
-    padding:10px 15px;
-    font-weight:700;
-}
-
-ul{
-    display:flex;
-    list-style:none;
-    gap:15px;
-}
-
-ul li a{
-    text-decoration:none;
-    border:2px solid white;
-    padding:5px 18px;
-    border-radius:30px;
-    transition:0.3s;
-}
-
-ul li a:hover{
-    background:white;
-    color:black;
-}
-
-.signup{
-    background:white;
-    color:black;
-}
-
-
-main{
-    height:calc(100vh - 70px);
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 120px;
-}
-
-
-.contentleft h2{
-    font-size:60px;
-    letter-spacing:5px;
-}
-
-
-.contentmid{
-    max-width:600px;
-}
-
-.contentmid p{
-    line-height:32px;
-    opacity:0.8;
-    margin:30px 0;
-}
-
-.btn{
-    padding:15px 40px;
-    background:white;
-    color:black;
-    border:none;
-    border-radius:30px;
-    font-weight:700;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:black;
-    color:white;
-    box-shadow:0 0 15px white;
-}
-
-
-.contentright{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.merc{
-    width:380px;
-    animation:float 4s ease-in-out infinite;
-}
-
-
-@keyframes float{
-    0%{transform:translateY(0);}
-    50%{transform:translateY(-20px);}
-    100%{transform:translateY(0);}
-}
-</style>
-
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Planet Shop | Home</title>
+<link rel="stylesheet" href="styles.css?v=20260515">
 </head>
 <body>
 
 <header>
-    <div class="logo">LOGO</div>
+    <a href="index.html" class="logo">PLANET SHOP</a>
     <nav>
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">OFFERS</a></li>
-            <li><a href="#">BUY NOW</a></li>
-            <li><a href="#">SELL NOW</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#" class="signup">SIGN UP</a></li>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="catalog.html">CATALOG</a></li>
+            <li><a href="#offers">OFFERS</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="cart.html" id="cart-nav-link">CART (<span id="cart-count">0</span>)</a></li>
+            <li><a href="signup.html" class="signup">SIGN UP</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <div class="contentleft">
-        <h2>MERCURY</h2>
-    </div>
+    <section class="home-main home-section" id="home">
+        <div class="contentmid">
+            <span class="eyebrow">Curated cosmic property marketplace</span>
+            <h1 class="hero-title">WELCOME TO PLANET SHOP</h1>
+            <p>
+                Your premier destination for planetary real estate. Whether you're looking for a cozy rocky world or a massive gas giant to call your own, we have the perfect celestial body for you. Start exploring the cosmos today!
+            </p>
+            <div class="hero-actions">
+                <a href="catalog.html" class="btn">START EXPLORING</a>
+                <a href="signup.html" class="btn btn-secondary">JOIN NOW</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <strong>8</strong>
+                    <span>Worlds available</span>
+                </div>
+                <div class="stat-card">
+                    <strong>3</strong>
+                    <span>Planet types</span>
+                </div>
+                <div class="stat-card">
+                    <strong>24/7</strong>
+                    <span>Orbit support</span>
+                </div>
+            </div>
+        </div>
 
-    <div class="contentmid">
-        <p>
-            Mercury is the smallest planet in our solar system, closest to the Sun,
-            and the fastest, completing an orbit in just 88 Earth days. It has a
-            heavily cratered surface similar to our Moon and extreme temperature
-            swings from scorching heat to freezing cold.
-        </p>
-        <button class="btn">BUY NOW</button>
-    </div>
+        <div class="contentright">
+            <div class="planet-frame">
+                <img src="earth.jpg" class="merc" alt="Earth">
+            </div>
+        </div>
+    </section>
 
-    <div class="contentright">
-        <img src="mercury.png" class="merc">
-    </div>
+    <section class="home-section info-section" id="offers">
+        <div class="section-heading">
+            <span class="eyebrow">This week's highlights</span>
+            <h2 class="page-title">FEATURED OFFERS</h2>
+            <p class="page-desc">Special picks for explorers who want something iconic, luxurious, or wildly adventurous.</p>
+        </div>
+
+        <div class="offer-grid">
+            <article class="info-card">
+                <span class="info-badge">Best Seller</span>
+                <h3>Earth Reserve Package</h3>
+                <p>Secure a premium eco-zone with cloud views, ocean access, and immediate habitability.</p>
+                <a href="product.html?id=earth" class="text-link">View Earth</a>
+            </article>
+
+            <article class="info-card">
+                <span class="info-badge">Collector Choice</span>
+                <h3>Saturn Ringfront Estate</h3>
+                <p>Own a legendary skyline with panoramic ring views and a high-status interstellar address.</p>
+                <a href="product.html?id=saturn" class="text-link">View Saturn</a>
+            </article>
+
+            <article class="info-card">
+                <span class="info-badge">Explorer Deal</span>
+                <h3>Mars Pioneer Bundle</h3>
+                <p>Perfect for first-time buyers who want rugged terrain, research potential, and bold red horizons.</p>
+                <a href="product.html?id=mars" class="text-link">View Mars</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="home-section info-section" id="about">
+        <div class="section-heading">
+            <span class="eyebrow">Who we are</span>
+            <h2 class="page-title">ABOUT PLANET SHOP</h2>
+            <p class="page-desc">We make the universe feel shoppable by pairing detailed planet listings with a simple, playful buying experience.</p>
+        </div>
+
+        <div class="about-grid">
+            <article class="about-card">
+                <h3>Handpicked listings</h3>
+                <p>Every world in our catalog is carefully presented with its type, price, and standout traits so browsing stays simple.</p>
+            </article>
+            <article class="about-card">
+                <h3>Fast decision flow</h3>
+                <p>Move from homepage to catalog, product details, and cart without dead links or placeholder sections.</p>
+            </article>
+            <article class="about-card">
+                <h3>Built for curiosity</h3>
+                <p>The experience keeps the original dark space vibe while making the content feel more alive and interactive.</p>
+            </article>
+        </div>
+    </section>
 </main>
 
+<footer>
+    <p>&copy; 2026 Planet Shop.</p>
+</footer>
+
+<script src="app.js?v=20260515"></script>
 </body>
 </html>
->>>>>>> 8a495afd8fd6738b1804d2464ef5923b6f6d0fea
+
+

@@ -1,64 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planet Shop | Cart</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Planet Shop | Cart</title>
+<link rel="stylesheet" href="styles.css?v=20260515">
 </head>
-<body data-page="cart">
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">PS</span>
-        <span>
-          <strong>PLANET SHOP</strong>
-          <small>Cosmic commerce for curious collectors</small>
-        </span>
-      </a>
+<body>
 
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="catalog.html">Catalog</a>
-        <a href="cart.html" class="active">Cart</a>
-        <a href="about.html">About</a>
-      </nav>
+<header>
+    <a href="index.html" class="logo">PLANET SHOP</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="catalog.html">CATALOG</a></li>
+            <li><a href="index.html#offers">OFFERS</a></li>
+            <li><a href="index.html#about">ABOUT US</a></li>
+            <li><a href="cart.html" id="cart-nav-link" class="active">CART (<span id="cart-count">0</span>)</a></li>
+            <li><a href="signup.html" class="signup">SIGN UP</a></li>
+        </ul>
+    </nav>
+</header>
 
-      <div class="topbar-actions">
-        <a class="nav-pill" href="catalog.html">Continue Shopping</a>
-        <a class="cart-link" href="cart.html">Cart <span id="navCartCount">0</span></a>
-      </div>
-    </header>
+<main>
+    <h1 class="page-title">YOUR CART</h1>
+    <p class="page-desc" id="cart-desc">Review your selected planets before checkout.</p>
 
-    <main>
-      <section class="cart-layout">
-        <div class="glass-card cart-main">
-          <div class="section-heading inline-head">
-            <div>
-              <span class="eyebrow">Your Order</span>
-              <h1 class="page-title">Cart</h1>
-            </div>
-            <button class="ghost-btn" id="clearCartBtn">Clear Cart</button>
-          </div>
-
-          <div class="cart-list-page" id="cartPageList"></div>
+    <div class="cart-container">
+        <div class="cart-items" id="cart-items-container">
+            <!-- Cart items injected by app.js -->
         </div>
 
-        <aside class="glass-card cart-summary-panel tilt-card">
-          <span class="eyebrow">Checkout</span>
-          <h2>Order Summary</h2>
-          <div class="summary-stack">
-            <div class="summary-line"><span>Subtotal</span><strong id="cartSubtotal">$0.0B</strong></div>
-            <div class="summary-line"><span>Orbital insurance</span><strong id="cartInsurance">$0.0B</strong></div>
-            <div class="summary-line total"><span>Total</span><strong id="cartTotal">$0.0B</strong></div>
-          </div>
-          <button class="primary-btn full-width" id="checkoutBtn">Checkout</button>
-          <p class="muted-copy">This is a fictional checkout flow for a concept e-commerce project.</p>
-        </aside>
-      </section>
-    </main>
-  </div>
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <div style="margin-top: 20px;">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">$0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Cosmic Tax</span>
+                    <span id="cart-tax">$0</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cart-total">$0</span>
+                </div>
+                <form class="checkout-form" id="checkout-form">
+                    <label for="checkout-email">Checkout Email</label>
+                    <input type="email" id="checkout-email" placeholder="Enter your email for order confirmation" required>
+                    <button class="btn" id="checkout-btn" type="submit" style="width: 100%; margin-top: 18px;">CHECKOUT</button>
+                </form>
+                <p class="checkout-note">You will receive an on-site confirmation notification after checkout.</p>
+                <div class="checkout-status" id="checkout-status" aria-live="polite"></div>
+            </div>
+        </div>
+    </div>
+</main>
 
-  <script src="app.js"></script>
+<footer>
+    <p>&copy; 2026 Planet Shop. </p>
+</footer>
+
+<script src="app.js?v=20260515"></script>
 </body>
 </html>
+
