@@ -1,7 +1,7 @@
 const planets = [
     { id: 'mercury', name: 'Mercury', type: 'Rocky', price: 1500000, img: 'mercury.png', desc: 'Mercury is the smallest planet in our solar system, closest to the Sun, and the fastest.' },
     { id: 'venus', name: 'Venus', type: 'Rocky', price: 2000000, img: 'venus.jpg', desc: 'Venus is Earth\'s twin in size but has a thick, toxic atmosphere and extreme temperatures.' },
-    { id: 'earth', name: 'Earth', type: 'Rocky', price: 9500000, img: 'earth.jpg', desc: 'Our home planet, the only known place with life, abundant water, and a breathable atmosphere.' },
+    { id: 'earth', name: 'Earth', type: 'Rocky', price: 9500000, img: 'earth image.png', desc: 'Our home planet, the only known place with life, abundant water, and a breathable atmosphere.' },
     { id: 'mars', name: 'Mars', type: 'Rocky', price: 3200000, img: 'mars.jpg', desc: 'The Red Planet, known for its rusty surface, giant volcanoes, and deep canyons.' },
     { id: 'jupiter', name: 'Jupiter', type: 'Gas Giant', price: 12000000, img: 'juipter.jpg', desc: 'The largest planet in our solar system, a gas giant with a Great Red Spot and dozens of moons.' },
     { id: 'saturn', name: 'Saturn', type: 'Gas Giant', price: 10500000, img: 'saturn.jpg', desc: 'Famous for its stunning ring system, Saturn is a massive gas giant with unique weather patterns.' },
