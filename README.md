@@ -2,6 +2,9 @@
 
 Planet Shop is a multi-page front-end e-commerce concept for buying fictional planets. It uses plain HTML, CSS, and JavaScript, with a dark cosmic theme, product browsing, cart management, and simple client-side authentication.
 
+## Deployed URL:
+https://planet-shop-mu.vercel.app/
+
 ## Features
 
 - Multi-page storefront with `Home`, `Catalog`, `Product`, `Cart`, and `Sign Up / Log In`
